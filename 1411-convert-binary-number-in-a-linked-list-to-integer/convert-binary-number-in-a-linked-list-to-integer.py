@@ -6,13 +6,13 @@
 class Solution:
     def getDecimalValue(self, head: Optional[ListNode]) -> int:
 
-        dig = ""
+        ans = 0
 
         while head:
-            dig += str(head.val)
+            ans = 2*ans + head.val
             head = head.next
         
-        return int(dig, 2)
+        return ans
 
 
         
